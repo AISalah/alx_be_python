@@ -1,5 +1,5 @@
 principal = 1000 # representing $1000
-rate = 0.05 
+rate= 0.05 
 time = 3 # representing 3 years
 
 interest = principal * rate * time
