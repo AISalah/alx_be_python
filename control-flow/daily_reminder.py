@@ -13,6 +13,3 @@ match priority:
     case _:
         print("Invalid priority level. Please enter 'high', 'medium', or 'low'.")
 
-match priority:
-    case "high":
-        
