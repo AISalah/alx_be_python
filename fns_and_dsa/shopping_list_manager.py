@@ -15,8 +15,13 @@ def main():
             shopping_list.append(input("Enter the item to add: "))
             print("Item added.")
         elif choice == '2':
-            shopping_list.remove(input("Enter the item to remove: "))
-            print("Item removed.")
+            item = input("Enter the item to remove: ")
+            
+            if item in shopping_list:
+                shopping_list.remove(item)
+                print("Item removed.")
+            else:
+                print("Item not found in the list.")
         elif choice == '3':
             shopping_list.sort()
             print(f"Shopping List contains: {shopping_list}")
