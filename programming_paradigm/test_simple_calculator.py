@@ -6,22 +6,22 @@ class testsimcal(unittest.TestCase):
     def setUp(self):
         self.calc = SimpleCalculator()
 
-    def testadd(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(2, 3), 5)
         self.assertEqual(self.calc.add(-1, 1), 0)
         self.assertEqual(self.calc.add(-5, -5), -10)
         self.assertEqual(self.calc.add(10, 0), 10)
-    def testSub(self):
+    def test_subtraction(self):
         self.assertEqual(self.calc.subtract(10, 5), 5)
         self.assertEqual(self.calc.subtract(-1, 1), -2)
         self.assertEqual(self.calc.subtract(-5, -5), 0)
         self.assertEqual(self.calc.subtract(5, 10), -5)
-    def testmul(self):
+    def test_multiply(self):
         self.assertEqual(self.calc.multiply(3, 4), 12)
         self.assertEqual(self.calc.multiply(-1, 5), -5)
         self.assertEqual(self.calc.multiply(10, 0), 0)
         self.assertEqual(self.calc.multiply(-2, -3), 6)
-    def testdiv(self):
+    def test_divide(self):
         self.assertEqual(self.calc.divide(5, 2), 2.5)
         self.assertEqual(self.calc.divide(-2, 2), -1)
         self.assertEqual(self.calc.divide(5, 0), None)
